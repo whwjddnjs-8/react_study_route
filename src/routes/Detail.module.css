@@ -1,0 +1,87 @@
+/* XEIcon */
+@import url('https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+
+.detailBody {
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+
+.detailBody .icon_area {
+    margin: 40px 0;
+    text-align: right;
+    font-size: 1.2em;
+}
+
+.detailBody .icon_area span {
+    margin: 5px;
+}
+
+.detailBody .icon_area span i {
+    margin-right: 5px;
+    font-size: 1.1em;
+}
+
+.detailBody .icon_area span:nth-child(1) i {
+    color: gold;
+}
+
+.detailBody .icon_area span:nth-child(2) i {
+    color: limegreen;
+    font-size: 1.2em;
+    vertical-align: middle;
+}
+
+.detailBody .icon_area span:nth-child(3) i {
+    color: crimson
+}
+
+.detailBody ul {
+    text-align: center;
+    list-style: none;
+    padding: 0
+}
+
+.detailBody ul li {
+    display: inline-block;
+    border: 1px solid #000;
+    padding: 5px 13px;
+    border-radius: 15px;
+    margin: 8px;
+    transition: 0.3s;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.detailBody ul li:hover {
+    color: #fff;
+    background-color: gray;
+    border: 1px solid transparent;
+}
+
+.detailBody .description {
+    font-size: 1.2em;
+}
+
+.show_url {
+    border: none;
+    display: inline-block;
+    width: 300px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #ddd;
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    box-sizing: border-box;
+    transition: 0.3s
+}
+
+.show_url:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.btn_area {
+    margin: 30px 0
+}
