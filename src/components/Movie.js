@@ -8,7 +8,7 @@ function Movie({ id, coverImg, title, summary, genres, rate }) {
         <Link to={`/movie/${id}`}><img src={coverImg} alt={title} /></Link>
         <h2><Link to={`/movie/${id}`}>{title}</Link></h2>
         <div className={styles.description}>
-             <p>{summary ? summary : "no Description"}</p>
+             <p>{summary ? summary : "No Description"}</p>
         </div>
         <ul>
             {genres.map((g) =>

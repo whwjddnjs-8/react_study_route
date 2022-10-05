@@ -8,10 +8,29 @@
     padding: 40px 30px;
     transition: 0.3s;
     position: relative;
+    border-radius: 20px;
 }
 
+@media (max-width: 1028px) {
+    .movie {
+        width: 33%;
+    }
+}
+
+@media (max-width: 818px) {
+    .movie {
+        width: 50%;
+    }
+}
+
+@media (max-width: 594px) {
+    .movie {
+        width: 100%;
+    }
+}
 .movie:hover {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.144);
+    background-color: #fff;
 }
 
 .movie h2 {
@@ -46,7 +65,7 @@
 }
 
 .movie ul {
-    text-align: left;
+    text-align: center;
     list-style: none;
     padding: 0
 }

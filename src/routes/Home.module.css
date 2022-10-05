@@ -39,9 +39,7 @@
 }
 
 .title span {
-    background: linear-gradient(to right, #fbcac9, #8ca6ce);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #fff;
 }
 
 .movies {
