@@ -1,6 +1,10 @@
 import Button from "./Button"
 import styles from "./App.module.css"
 import {useState, useEffect} from "react"
+import Movie from "./components/Movie";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Home from "./routes/Home";
+import Detail from "./routes/Detail";
 
 function Hello() {
   // 대부분 이렇게 function을 많이 만들기보다는 useEffect안에다 함수를 직접 입력하여 실행한다.
@@ -98,7 +102,7 @@ function App() {
     </div>
   ) */
 
-  const [loading, setLoading] = useState(true);
+  /* const [loading, setLoading] = useState(true);
   const [coins, setCoins] = useState([]);
   const [myMoney, setMyMoney] = useState('');
   const [cost, setCost] = useState();
@@ -142,7 +146,18 @@ function App() {
       
       <h3>You Need {myMoney / cost}</h3>
     </div>
-  )
+  ) */
+
+  return <Router>
+    <Switch>
+      <Route path="/movie/:id">
+        <Detail />
+      </Route>
+      <Route path="/">
+            <Home />
+      </Route>
+    </Switch>
+  </Router>;
 }
 
 export default App;
